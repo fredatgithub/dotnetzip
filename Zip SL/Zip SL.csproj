@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ionic.Zip</RootNamespace>
     <AssemblyName>Ionic.Zip</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <SilverlightApplication>false</SilverlightApplication>
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
@@ -26,10 +26,9 @@
     <AssemblyOriginatorKeyFile>..\Ionic.snk</AssemblyOriginatorKeyFile>
     <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
-    <UpgradeBackupLocation />
+    <UpgradeBackupLocation>D:\Users\fjuhel\Documents\Visual Studio 2015\Projects\dotnetzip\Backup\Zip SL\</UpgradeBackupLocation>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -80,8 +79,7 @@
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Zip\*.cs"
-             Exclude="..\Zip\ComHelper.cs;..\Zip\WinZipAes.cs;..\Zip\ZipFile.Check.cs;..\Zip\ZipFile.SaveSelfExtractor.cs;">
+    <Compile Include="..\Zip\*.cs" Exclude="..\Zip\ComHelper.cs;..\Zip\WinZipAes.cs;..\Zip\ZipFile.Check.cs;..\Zip\ZipFile.SaveSelfExtractor.cs;">
       <Link>Zip\%(FileName)</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,7 +99,6 @@
       <Link>Properties\SolutionInfo.cs</Link>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <None Include="..\Ionic.snk">
       <Link>Ionic.snk</Link>
